@@ -48,7 +48,7 @@ header {
 }
 
 .main-container {
-  margin-top: 100px;
+  margin-top: 50px;
   height: 100vh;
   background-color: white;
 }
@@ -59,7 +59,8 @@ header {
 }
 
 .main-title {
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin: auto;
   background-color: #ffc017;
   display: flex;
@@ -102,10 +103,6 @@ header {
   border-radius: 25px;
 }
 
-.tranding {
-  border-bottom: 1 px solid black;
-}
-
 .tranding-container {
   width: 100%;
   border-bottom: 1px solid black;
@@ -115,7 +112,8 @@ header {
   width: 65%;
   height: fit-content;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .title-trending {
@@ -275,6 +273,12 @@ header {
   width: 70px;
 }
 
+/*aside {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}*/
+
 .aside-container {
   width: 70%;
   margin-left: 20px;
@@ -323,4 +327,118 @@ header {
   font-weight: 400;
   font-style: normal;
   color: rgb(139, 137, 137);
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+  }
+
+  .header-container {
+    width: 90%;
+    min-height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  .navbar button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 5px;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+  }
+
+  /* Parte Stay Curious */
+
+  .main-box {
+    margin: auto;
+    min-height: 100vh;
+  }
+
+  .main-title {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    background-color: #ffc017;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 430px;
+    border-bottom: 1px solid black;
+  }
+  .title-content {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Parte trending */
+  .tranding-container {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  .trending {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .title-trending {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .trending-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .trending-box .box {
+    width: 50%;
+    height: 200px;
+    display: flex;
+  }
+
+  .left-bottom-content {
+    position: relative;
+    top: 200px;
+    left: -100px;
+  }
+  aside {
+    position: absolute;
+    left: 40px;
+  }
 }
