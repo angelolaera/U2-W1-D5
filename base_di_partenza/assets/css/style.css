@@ -49,13 +49,11 @@ header {
 
 .main-container {
   margin-top: 50px;
-  height: 100vh;
   background-color: white;
 }
 
 .main-box {
   margin: auto;
-  min-height: 100vh;
 }
 
 .main-title {
@@ -193,6 +191,8 @@ header {
   color: rgb(87, 86, 86);
 }
 
+/* Parte relativa alle card di sotto + aside */
+
 .bottom-content {
   width: 65%;
   margin: auto;
@@ -200,7 +200,7 @@ header {
 }
 
 .left-bottom-content {
-  width: 150%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", serif;
@@ -273,11 +273,7 @@ header {
   width: 70px;
 }
 
-/*aside {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}*/
+/* Parte relativa all'aside */
 
 .aside-container {
   width: 70%;
@@ -433,13 +429,18 @@ header {
     display: flex;
   }
 
-  .left-bottom-content {
-    position: relative;
-    top: 200px;
-    left: -100px;
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
   }
   aside {
-    position: absolute;
-    left: 40px;
+    order: -1;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .aside-container {
+    width: 100%;
   }
 }
